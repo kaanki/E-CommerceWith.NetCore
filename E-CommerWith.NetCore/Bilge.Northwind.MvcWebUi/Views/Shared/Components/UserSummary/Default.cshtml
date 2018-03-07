@@ -1,0 +1,18 @@
+﻿@model Bilge.Northwind.MvcWebUi.Models.UserDetailsViewModel
+
+
+<ul class="dropdown-menu">
+
+    @if (!String.IsNullOrEmpty(Model.UserName))
+    {
+        <li>
+
+            <a>Welcome @Model.UserName</a>
+        </li>
+        <li>
+            <a asp-controller="Account" asp-action="LogOff">Logoff</a>
+        </li>
+    }
+
+</ul>
+
